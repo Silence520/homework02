@@ -13,7 +13,9 @@ $(function(){
   	  	}).catch(function (error) {
   	  	  	console.log(error);
   	  	});
-  	  	  
+
+
+  	  	
   	  	System.import('/script/addlikes.js').then(function(m) {
   	  	   	$.extend({m});
   	  	   	// var count = 0;

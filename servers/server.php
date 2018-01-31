@@ -22,7 +22,6 @@
 			echo json_encode($resdate);
 	 	}
 	}
-	
-mysql_close($con);
+	mysql_close($con);
 
 ?>
