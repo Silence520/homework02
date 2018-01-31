@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>data</title>
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+	<button id="add"> submit</button>
+</body>
+</html>
+<script type="text/javascript">
+	$(function (argument) {
+		$(document).on('click','#add',function(){
+			axios({
+				  method: 'get',
+				  url: 'http://localhost:8050/homework02/servers/server.php?number=1212',
+				  // headers:{'Content-Type':'application/x-www-form-urlencoded'},
+				  data:{
+				    	number: '1212'
+	  			}
+			}).then(function(res) {
+			 	console.log(res.body)
+			});
+	
+		})
+
+	})	
+</script>
