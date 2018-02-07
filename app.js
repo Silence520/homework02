@@ -61,7 +61,10 @@ app.use(router( _ => {
 	  })
 	  _.get('/*', async(ctx, next) => {
 	    	ctx.status=404;
-	        	ctx.body='您的页面不翼而飞啦~~~';
+	        	ctx.body='您的页面不翼而飞啦~~~哈哈！';
+	        	// ctx.body='您的页面不翼而飞啦~~~哈哈！';
+	        	// ctx.body='您的页面不翼而飞啦~~~哈哈！';
+	        	// ctx.body='您的页面不翼而飞啦~~~哈哈！';
 	 })
 
 }));
